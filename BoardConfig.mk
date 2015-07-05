@@ -19,6 +19,9 @@
 
 LOCAL_PATH := device/huawei/msm8916-common
 
+# inherit from the proprietary version
+-include vendor/huawei/msm8916-common/BoardConfigVendor.mk
+
 TARGET_NO_RADIOIMAGE := true
 TARGET_LDPRELOAD := libNimsWrap.so
 

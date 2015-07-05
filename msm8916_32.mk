@@ -1,5 +1,7 @@
 LOCAL_PATH := device/huawei/msm8916-common
 
+$(call inherit-product, vendor/huawei/msm8916-common/msm8916-common-vendor.mk)
+
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
 # media_profiles and media_codecs xmls for 8916
