@@ -3,12 +3,9 @@
 # automatically including any other Android.mk files under this directory.
 #
 
-#include $(CLEAR_VARS)
-#LOCAL_MODULE       := wpa_supplicant.conf
-#LOCAL_MODULE_TAGS  := optional
-#LOCAL_MODULE_CLASS := ETC
-#LOCAL_SRC_FILES    := $(LOCAL_MODULE)
-#LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/wifi
-#include $(BUILD_PREBUILT)
+LOCAL_PATH := $(call my-dir)
 
-#include $(call all-makefiles-under,$(LOCAL_PATH))
+ifneq ($(filter c8817d,$(TARGET_DEVICE)),)
+-include $(LOCAL_PATH)/AndroidBoard.mk
+include $(call all-makefiles-under,$(LOCAL_PATH))
+endif
