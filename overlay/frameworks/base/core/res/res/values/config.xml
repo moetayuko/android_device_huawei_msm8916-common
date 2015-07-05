@@ -33,13 +33,7 @@
    <bool name="config_enableCpuBoostForOverScrollerFling">true</bool>
    <!-- Whether cpu boost is enabled for horizontal scroll. -->
    <bool name="config_enableCpuBoostForScroller">true</bool>
-   <!-- Whether cpu boost is enabled for application's 1st launch. -->
-   <bool name="config_enableCpuBoostForAppLaunch">true</bool>
-   <integer name="launchboost_timeout_param">2000</integer>
-   <integer name="launchboost_schedboost_param">0x1E01</integer>
-   <integer name="launchboost_cpuboost_param">0x20F</integer>
-   <integer name="launchboost_pcdisbl_param">0x101</integer>
-   <integer name="launchboost_ksmboost_param">0x1C00</integer>
+
    <!-- Indicate whether to allow the device to suspend when the screen is off
    due to the proximity sensor.  This resource should only be set to true
    if the sensor HAL correctly handles the proximity sensor as a wake-up source.
