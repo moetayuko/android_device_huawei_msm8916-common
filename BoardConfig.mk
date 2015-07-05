@@ -120,3 +120,6 @@ MALLOC_IMPL := dlmalloc
 
 #Enable HW based full disk encryption
 TARGET_HW_DISK_ENCRYPTION := true
+
+# Vold
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
