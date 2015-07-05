@@ -60,6 +60,9 @@ TARGET_USES_CSVT := true
 # Enable suspend during charger mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+# Fonts
+EXTENDED_FONT_FOOTPRINT := true
+
 # GPS
 TARGET_NO_RPC := true
 
