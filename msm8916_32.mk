@@ -99,6 +99,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
 endif # TARGET_USES_QCA_NFC
 
+# Screen density
+PRODUCT_AAPT_CONFIG := normal
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # ANT+ stack
 PRODUCT_PACKAGES += \
     AntHalService \
