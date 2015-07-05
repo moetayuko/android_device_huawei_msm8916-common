@@ -153,6 +153,8 @@ BOARD_SEPOLICY_DIRS += \
 BOARD_SEPOLICY_UNION += \
     netd.te
 
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+
 #Use dlmalloc instead of jemalloc for mallocs
 MALLOC_IMPL := dlmalloc
 
