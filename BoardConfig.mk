@@ -109,6 +109,9 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 # Power
 TARGET_POWERHAL_VARIANT := qcom
 
+# Qualcomm support
+BOARD_USES_QCOM_HARDWARE := true
+
 # Added to indicate that protobuf-c is supported in this build
 PROTOBUF_SUPPORTED := true
 
