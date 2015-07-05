@@ -100,6 +100,20 @@ on boot
 
     chown system system /sys/class/graphics/fb0/mipi_crc
 
+    chown system system /sys/class/leds/torch-light/brightness
+    chmod 666 /sys/class/leds/torch-light/brightness
+
+    chown system system /sys/devices/virtual/timed_output/vibrator/vtg_level
+    chmod 0644 /sys/devices/virtual/timed_output/vibrator/vtg_level
+
+    # Display Color Calibration
+    chown root system /sys/devices/platform/kcal_ctrl.0/kcal
+    chown root system /sys/devices/platform/kcal_ctrl.0/kcal_ctrl
+    chmod 0664 /sys/devices/platform/kcal_ctrl.0/kcal
+    chmod 0664 /sys/devices/platform/kcal_ctrl.0/kcal_ctrl
+    restorecon /sys/devices/platform/kcal_ctrl.0/kcal
+    restorecon /sys/devices/platform/kcal_ctrl.0/kcal_ctrl
+
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
