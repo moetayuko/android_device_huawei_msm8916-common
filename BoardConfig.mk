@@ -60,6 +60,9 @@ TARGET_USES_CSVT := true
 # Enable suspend during charger mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+#Enable HW based full disk encryption
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
 
@@ -127,11 +130,17 @@ BOARD_USES_QC_TIME_SERVICES := true
 # Added to indicate that protobuf-c is supported in this build
 PROTOBUF_SUPPORTED := true
 
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+
+BOARD_SEPOLICY_DIRS += \
+    device/huawei/msm8916-common/sepolicy
+
+BOARD_SEPOLICY_UNION += \
+    netd.te
+
 #Use dlmalloc instead of jemalloc for mallocs
 MALLOC_IMPL := dlmalloc
-
-#Enable HW based full disk encryption
-TARGET_HW_DISK_ENCRYPTION := true
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
