@@ -57,6 +57,9 @@ TARGET_USES_QCOM_MM_AUDIO := true
 # Enables CSVT
 TARGET_USES_CSVT := true
 
+# Enable suspend during charger mode
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
 # GPS
 TARGET_NO_RPC := true
 
