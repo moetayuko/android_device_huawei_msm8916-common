@@ -58,6 +58,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sec_config:system/etc/sec_config
 
+# GPS config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
+    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
+    $(LOCAL_PATH)/gps/quipc.conf:system/etc/quipc.conf \
+    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
+
 # MSM IRQ Balancer configuration file
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
