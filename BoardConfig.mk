@@ -136,6 +136,9 @@ TARGET_POWERHAL_VARIANT := qcom
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery.fstab
+
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
