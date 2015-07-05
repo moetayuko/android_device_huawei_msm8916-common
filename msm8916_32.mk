@@ -237,6 +237,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8916
 
+# Prebuilt library
+PRODUCT_PACKAGES += \
+    rmt_oeminfo \
+    test_diag
+
 # Ril
 PRODUCT_PACKAGES += \
     libxml2
