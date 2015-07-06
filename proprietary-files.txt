@@ -679,6 +679,9 @@ vendor/lib/libmm-abl-oem.so
 # Qualcomm framework
 bin/irsc_util
 bin/qcom-system-daemon
+etc/data/dsi_config.xml
+etc/data/netmgr_config.xml
+etc/data/qmi_config.xml
 lib/libqmi_nv_api.so
 lib/libqmi_oem_api.so
 lib/libqmi_oem_svc.so
