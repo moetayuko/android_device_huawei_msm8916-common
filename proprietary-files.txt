@@ -35,6 +35,7 @@ lib/libchromatix_imx135_liveshot.so
 lib/liboeminfo.so
 lib/libmmcamera_interface.so
 lib/libmm-qcamera.so
+lib/libcutilz.so
 vendor/lib/libactuator_a3907.so
 vendor/lib/libactuator_a3907_camcorder.so
 vendor/lib/libactuator_a3907_camera.so
