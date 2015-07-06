@@ -552,8 +552,6 @@ bin/loc_launcher
 bin/lowi-server
 bin/xtwifi-client
 bin/xtwifi-inet-agent
-etc/cacert_location.pem
-etc/xtra_root_cert.pem
 lib/libgps.utils.so
 lib/libloc_api_v02.so
 lib/libloc_core.so
